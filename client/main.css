@@ -64,3 +64,10 @@ h1 {
 audio {
 	display: none;
 }
+
+#volume {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	cursor: pointer;
+}

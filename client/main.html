@@ -1,15 +1,19 @@
 <head>
 	<title>Skyyart - Live Stream Gaming ϟ LoL, CS Go, Minecraft, Overwatch</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-	<audio autoplay loop><source src="/music/countdown.mp3" type="audio/mpeg"></audio>
+	<audio id="music" autoplay loop><source src="/music/countdown.mp3" type="audio/mpeg"></audio>
 	<div>
 		{{> hello}}
 	</div>
 </body>
 
 <template name="hello">
+	<div id="volume">
+		<i class="material-icons">volume_up</i>
+	</div>
 	<div>
 		<div class="social">
 			<a href="https://www.facebook.com/Skyyart.Willy/"><i class="fa fa-facebook fa-lg"></i></a>

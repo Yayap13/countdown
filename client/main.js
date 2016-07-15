@@ -33,4 +33,15 @@ Template.hello.helpers({
 });
 
 Template.hello.events({
+	'click #volume': function() {
+		console.log('clicked');
+		var vid = document.getElementById("music");
+		if(vid.volume==1) {
+			vid.volume=0;
+			$('#volume').html('<i class="material-icons">volume_off</i>');
+		} else {
+			vid.volume=1;
+			$('#volume').html('<i class="material-icons">volume_up</i>');
+		}
+	}
 });
